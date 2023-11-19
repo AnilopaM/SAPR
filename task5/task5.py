@@ -331,8 +331,8 @@ def f3(str1, str2, str3, isStr) -> list:
 
     return resL
 
-def task(str1, str2, str3) -> list:
-    return f3(str1, str2, str3, isStrResultType(str1, str2))
+def task(str1, str2) -> list:
+    return f2(str1, str2, isStrResultType(str1, str2))
 
 def main():
     #str1 = '["1", ["2","3"],"4", ["5", "6", "7"], "8", "9", "10"]'
@@ -359,7 +359,7 @@ def main():
     str3 = '["3",["1","4"],"2","6",["5","7","8"],["9","10"]]'
     '''
 
-    print(task(str1, str2, str3))
+    print(task(str1, str2))
 
 if __name__ == "__main__":
     main()
